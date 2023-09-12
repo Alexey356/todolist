@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TО DO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <h1>СПИСОК ДЕЛ</h1>
+      <form>
+        <input type="text" placeholder="Введите новую задачу...">
+        <button type="submit">Добавить</button>
+      </form>
+      <ul>
+        <li>
+          <input type="checkbox" onclick="taskComplete(this)" class="check">
+          <input type="text" value="Пример задачи" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
+          <i class="fa fa-trash" onclick="removeTask(this)"></i>
+        </li>
+      </ul>
+      <script src="scripts.js"></script>
+    </div>
+  </div>
+</body>
+</html>
