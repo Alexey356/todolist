@@ -39,6 +39,27 @@
   width: 100%;
   background-color: #e1e3ea;
 }
+.app form.deletebutton button.lastelement {
+  cursor: pointer;
+  color: white;
+  background-color: #000000;
+  border-radius: .5rem .5rem .5rem .5rem ;
+  font-size: 20px;
+  font-weight: 600;
+  height: 42px;
+  width: 50%;
+}
+
+.app form.deletebutton button.firstelement {
+  cursor: pointer;
+  color: white;
+  background-color: #000000;
+  border-radius: .5rem .5rem .5rem .5rem ;
+  font-size: 20px;
+  font-weight: 600;
+  height: 42px;
+  width: 50%;
+}
 
 .app form input {
   border: none;
@@ -111,7 +132,7 @@
 }
 
 .app ul li i:hover {
-  color: rgb(255, 82, 82);
+  color: rgb(255, 0, 0);
 }
 
 .completed {
