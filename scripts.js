@@ -51,6 +51,18 @@ function addTask() {
   // отчистка строки ввода
   task.value = "";
 }
+//удаление последнего элемента
+function lastElement(){
+  let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
+  var lastElement = tasks.pop();
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+//удаление первого элемента
+function firstElement(){
+  let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
+  var firstElement = tasks.shift();
+  localStorage.setItem("tasks", JSON.stringify(tasks)); 
+}
 
 function taskComplete(event) {
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
@@ -106,5 +118,3 @@ function editTask(event) {
   // обновление локального хранилища
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-
-
