@@ -10,10 +10,15 @@
 <body>
   <div class="container">
     <div class="app">
+      
       <h1>СПИСОК ДЕЛ</h1>
       <form>
         <input type="text" placeholder="Введите новую задачу...">
         <button type="submit">Добавить</button>
+      </form>
+      <form class="deletebutton">
+        <button type="submit" class="firstelement" onclick="firstElement(this)">Удалить первый элемент</button>
+        <button type="submit" class="lastelement" onclick="lastElement(this)">Удалить последний элемент</button>
       </form>
       <ul>
         <li>
